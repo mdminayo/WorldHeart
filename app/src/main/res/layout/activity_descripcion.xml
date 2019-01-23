@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescripcionActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="207dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="44dp"
+        android:text="DESCRIPCION"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+       android:textAlignment="textStart"
+        android:id="@+id/txtDescripcion"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="112dp"
+        android:gravity="start"
+        android:text="En esete espacio va una corta descripcion de lo que es el elvento y las razones para asistir a el"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+</android.support.constraint.ConstraintLayout>
